@@ -1,0 +1,15 @@
+<select id="genres">
+  <option value="rock">Рок</option>
+  <option value="blues" selected>Блюз</option>
+</select>
+
+<script>
+  let selectedOption = genres.options[genres.selectedIndex];
+  alert( selectedOption.value );
+  alert( selectedOption.text );
+
+  let newOption = new Option("Классика", "classic");
+  genres.append(newOption);
+
+  newOption.selected = true;
+</script>
